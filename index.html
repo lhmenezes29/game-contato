@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Game Clube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family= Montserrat:wght@400;700 & display=swap" rel="stylesheet">
+    
+
+</head>
+
+<body>
+    
+    <div class="caixa">
+        <img src="gamer.png" height="100%" width="100%">
+        <h1> Como descrever um Gamer</h1><br>
+
+        <p>O termo gamer é usado para diferenciar os verdadeiros jogadores de quem joga esporadicamente. 
+        Os gamers são aqueles que traçam estratégias, usam técnicas, conhecem os jogos e fazem disso um estilo de vida. Atualmente, se tornou até uma profissão.</p>
+        
+        <h1>O que é ser um gamer?</h1>
+        
+        <p>Gamer é o nome dado atualmente para os famosos “jogadores de videogame”. Esses podem ser tanto gamers profissionais como gamers das horas vagas.</p>
+
+
+        <div class="conteiner"><button type="button" class="contato" onclick="abrir()">Dúvidas? Entre em contato conosco!</button></div>
+    </div>
+    <form action="https://formsubmit.co/ermeck29@gmail.com" method="POST">
+        <input type="text" name="name" obrigatório placeholder="Nome:">
+        <input type="email" name="email" obrigatório placeholder="E-mail:">
+        <textarea type="text" name="duvida" placeholder="Sua dúvida aqui"></textarea>
+        <button type="submit" class="enviar">Enviar</button>
+        <button type="button" class="voltar" onclick="fechar()">Voltar</button>
+    </form>
+    
+      
+
+</body>
+<script>
+    function abrir() {
+        document.querySelector("form").style.opacity = 1
+        document.querySelector("div").style.opacity = 0.2
+    }
+
+    function fechar() {
+        document.querySelector("form").style.opacity = 0
+        document.querySelector("div").style.opacity = 1
+    }
+
+</script>
+
+</html>
